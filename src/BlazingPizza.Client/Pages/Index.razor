@@ -22,7 +22,7 @@
     </ul>
 </div>
 
-@* <div class="sidebar">*@
+@* <div class="sidebar"> *@
 @* Este código oculta el sidebar si no hay pizzas *@
 <div class="sidebar" style="@(Order.Pizzas.Count == 0 ? "display: none;" : "")">
     @if (Order.Pizzas.Any())

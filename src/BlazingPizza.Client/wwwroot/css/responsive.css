@@ -1,15 +1,33 @@
-﻿
-/* Responsive adjustments for site.css */
-
-@media (max-width: 768px) {
-    .pizza-cards {
-        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-        padding: 1rem;
+﻿@media (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        height: auto;
     }
 
-    .dialog {
-        width: 95%;
-        margin: 1rem;
+    .main,
+    .sidebar {
+        width: 100%;
+        height: auto;
+        overflow: visible;
+    }
+
+    .sidebar {
+        position: relative;
+        order: 2;
+    }
+
+    .main {
+        order: 1;
+    }
+
+    .pizza-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+        height: auto;
+        overflow: visible;
     }
 
     .top-bar {
@@ -18,22 +36,7 @@
         height: auto;
     }
 
-    .user-info {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .content,
-    .sidebar {
-        height: auto;
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-        position: static;
-    }
-
+    .user-info,
     .order-total {
         flex-direction: column;
         align-items: flex-start;
@@ -57,7 +60,6 @@
     }
 }
 
-/* Allow scroll on small devices */
 body {
     overflow-y: auto;
 }
