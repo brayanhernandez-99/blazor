@@ -1,0 +1,63 @@
+﻿
+/* Responsive adjustments for site.css */
+
+@media (max-width: 768px) {
+    .pizza-cards {
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        padding: 1rem;
+    }
+
+    .dialog {
+        width: 95%;
+        margin: 1rem;
+    }
+
+    .top-bar {
+        padding: 0 1rem;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .user-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content,
+    .sidebar {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: static;
+    }
+
+    .order-total {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+        .order-total .btn {
+            margin: 0.5rem 0 0 0;
+            width: 100%;
+        }
+
+    .dialog-body > div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .dialog-body label {
+        width: auto;
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Allow scroll on small devices */
+body {
+    overflow-y: auto;
+}
