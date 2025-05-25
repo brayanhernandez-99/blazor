@@ -2,23 +2,21 @@
     .content {
         display: flex;
         flex-direction: column;
-        height: auto;
-    }
-
-    .main,
-    .sidebar {
-        width: 100%;
-        height: auto;
-        overflow: visible;
-    }
-
-    .sidebar {
-        position: relative;
-        order: 2;
+        height: auto !important;
     }
 
     .main {
         order: 1;
+        width: 100%;
+        height: auto !important;
+        overflow: visible;
+    }
+
+    .sidebar {
+        order: 2;
+        width: 100%;
+        height: auto !important;
+        position: relative;
     }
 
     .pizza-cards {
@@ -28,6 +26,14 @@
         padding: 1rem;
         height: auto;
         overflow: visible;
+    }
+
+        .pizza-cards > li {
+            height: auto;
+        }
+
+    .pizza-info {
+        padding-bottom: 3rem;
     }
 
     .top-bar {
