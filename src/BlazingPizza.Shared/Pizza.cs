@@ -1,4 +1,5 @@
 ﻿using System.Text.Json.Serialization;
+using System.Globalization;
 
 namespace BlazingPizza;
 
@@ -37,7 +38,7 @@ public class Pizza
 
     public string GetFormattedTotalPrice()
     {
-        return GetTotalPrice().ToString("0.00");
+        return GetTotalPrice().ToString("N2", new CultureInfo("es-CO"));
     }
 }
 
