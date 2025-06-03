@@ -98,6 +98,14 @@ public static class SeedData
                 BasePrice = 18999.90m,
                 ImageUrl = "img/pizzas/margherita.jpg",
             },
+            new PizzaSpecial()
+            {
+                Id = 9,
+                Name = "Brayan Pizza",
+                Description = "Pizza italiana tradicional con tomate y albahaca",
+                BasePrice = 18999.90m,
+                ImageUrl = "img/pizzas/cheese.jpg",
+            },
          };
 
         db.Toppings.AddRange(toppings);

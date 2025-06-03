@@ -45,3 +45,4 @@ public class Pizza
 [JsonSourceGenerationOptions(GenerationMode = JsonSourceGenerationMode.Serialization)]
 [JsonSerializable(typeof(Pizza))]
 public partial class PizzaContext : JsonSerializerContext { }
+
